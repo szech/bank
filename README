@@ -11,9 +11,12 @@ There is a simple html form to create payments between accounts.
 
 
 Deployment info:
+- get bank.war from https://dl.dropboxusercontent.com/u/16834089/bank.war
 - put bank.war in %tomcat%\webapp folder
 - start tomcat
 - go to localhost:8080/bank to get started
+
+- alternatively, run from inside an IDE.
 
 
 Application info:
