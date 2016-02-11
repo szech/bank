@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bank :: New Payment</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+    
+<body>
+<p>Make a new payment</p>
+<p>
+<form action="http://localhost:8080/bank/api/payments/new" method="POST">
+  <fieldset>
+    <legend>Payment Details:</legend>
+    Amount:<br />
+    <input type="number" min="0.01" step=".01" name="amount" id="amount"><br /><br />
+    
+ 
+    Source Account:<br />
+    <input type="number"  min="1" step="1" name="from_acc" id="from_acc"><br /><br />
+    
+    Destination Account:<br />
+    <input type="number" min="1" step="1" name="to_acc" id="to_acc"><br /><br />
+    
+    <input type="submit" value="Submit">
+  </fieldset>
+  
+  
+</form>
+</body>
+
+</html>
