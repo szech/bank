@@ -1,0 +1,38 @@
+Restful web application demo
+
+Written with / uses:
+- java, deploys on tomcat
+- jersey
+- rest-assured  
+- genson
+
+A simple "bank" with customers, accounts and payments.
+There is a simple html form to create payments between accounts.
+
+
+Deployment info:
+- put bank.war in %tomcat%\webapp folder
+- start tomcat
+- go to localhost:8080/bank to get started
+
+
+Application info:
+- initialise all the application data by clicking the link on index.html
+- look at some objects e.g.
+    localhost:8080/bank/api/customers/
+    localhost:8080/bank/api/customers/1
+    
+    localhost:8080/bank/api/accounts/
+    localhost:8080/bank/api/accounts/2
+    
+    localhost:8080/bank/api/payments
+    localhost:8080/bank/api/payments/1
+    
+    
+    
+  - to make a new payment, use the form at  
+    localhost:8080/bank/api/payments/new
+    
+    
+Testing info:
+- jUnit tests included at com.szech.bank.test, run them through the IDE
